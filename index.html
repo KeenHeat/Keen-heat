@@ -4,52 +4,173 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Keen Heat | Plumbing & Heating</title>
+<title>Keen Heat | Trusted Plumber London & Surrey</title>
+
+<meta name="description" content="Keen Heat is a trusted plumbing & heating company serving London, Surrey and surrounding areas. 24/7 emergency callouts, boiler repairs, installations.">
 
 <style>
+:root {
+  --primary: #0a3d62;
+  --accent: #e74c3c;
+  --light: #f5f7fa;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f7fa;
+  background: var(--light);
   color: #333;
 }
 
-header {
-  background: #0a3d62;
+/* Top bar */
+.topbar {
+  background: var(--primary);
   color: white;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
+  font-size: 14px;
 }
 
+/* Header */
+header {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--primary);
+}
+
+/* Hero */
 .hero {
-  padding: 60px 20px;
+  background: linear-gradient(rgba(10,61,98,0.85), rgba(10,61,98,0.85)),
+  url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+  color: white;
   text-align: center;
-  background: #eaf2f8;
+  padding: 80px 20px;
 }
 
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--primary);
+}
+
+/* Sections */
 section {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-  padding: 30px 20px;
+  padding: 50px 20px;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
 .card {
   background: white;
   padding: 20px;
-  margin: 10px 0;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
+/* Trust strip */
+.trust {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Contact */
+.contact-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Floating buttons */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.call-now {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: var(--accent);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
 footer {
-  background: #0a3d62;
+  background: var(--primary);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
 }
 </style>
 </head>
 
 <body>
+
+<div class="topbar">
+🚨 24/7 Emergency Plumbing Covering London & Surrey 🚨
+</div>
 
 <header>
   <h1>Keen Heat</h1>
@@ -57,29 +178,81 @@ footer {
 </header>
 
 <div class="hero">
-  <h2>Serving London, Surrey & Surrounding Areas</h2>
-  <p>Reliable plumbing & heating services you can trust</p>
+  <h2>Trusted Local Plumber You Can Rely On</h2>
+  <p>Fast Response • Fully Insured • Fair Pricing</p>
+
+  <a class="btn btn-primary" href="#contact">Get a Free Quote</a>
+  <a class="btn btn-secondary" href="tel:07933381495">Call Now</a>
+</div>
+
+<div class="trust">
+⭐ Rated Plumbing Service in London & Surrey
 </div>
 
 <section>
-  <h2>Services</h2>
-  <div class="card">Boiler Repairs & Installation</div>
-  <div class="card">Central Heating</div>
-  <div class="card">Leak Repairs</div>
-  <div class="card">Emergency Callouts</div>
+  <h2>Our Services</h2>
+
+  <div class="grid">
+    <div class="card">Boiler Repairs & Installation</div>
+    <div class="card">Central Heating Systems</div>
+    <div class="card">Leak Detection & Repairs</div>
+    <div class="card">Emergency Callouts</div>
+  </div>
 </section>
 
 <section>
-  <h2>Contact</h2>
+  <h2>Why Choose Us</h2>
+
+  <div class="grid">
+    <div class="card">✔ Fast Emergency Response</div>
+    <div class="card">✔ Local Trusted Engineer</div>
+    <div class="card">✔ Transparent Pricing</div>
+    <div class="card">✔ Work Guaranteed</div>
+  </div>
+</section>
+
+<section>
+  <h2>Areas We Cover</h2>
+  <div class="card" style="text-align:center;">
+    London • Surrey • Surrounding Areas
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get a Quote</h2>
+
+  <div class="contact-box">
+    <p><strong>📞 07933381495</strong></p>
+    <p><strong>📧 info@keenheat.co.uk</strong></p>
+
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Your Phone" required>
+      <textarea name="message" placeholder="Describe the job..." required></textarea>
+      <button class="btn btn-primary" type="submit">Send Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <h2>Find Us</h2>
   <div class="card">
-    📞 07XXX XXX XXX<br>
-    📧 your@email.com
+    <iframe
+      src="https://maps.google.com/maps?q=Surrey,UK&t=&z=10&ie=UTF8&iwloc=&output=embed"
+      width="100%" height="300" style="border:0;">
+    </iframe>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Keen Heat</p>
+  <p>© 2026 Keen Heat | Plumbing & Heating London & Surrey</p>
 </footer>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/447933381495" target="_blank">💬</a>
+
+<!-- Call -->
+<a class="call-now" href="tel:07933381495">📞 Call Now</a>
 
 </body>
 </html>

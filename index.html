@@ -6,76 +6,85 @@
 
 <title>Keen Heat | Emergency Plumber London & Surrey</title>
 
-<meta name="description" content="Keen Heat - Emergency plumber in London & Surrey. Boiler repairs, heating systems, and 24/7 plumbing callouts. Fast local service you can trust.">
+<meta name="description" content="Keen Heat - Emergency plumber in London & Surrey. 24/7 boiler repairs, heating and plumbing services. Fast local response.">
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f7fa;
-  color: #333;
+  color: #222;
 }
 
-/* TOP BANNER */
-.top-banner {
-  background: #e74c3c;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
-
-/* HEADER */
-header {
+/* TOP BAR */
+.topbar {
   background: #0a3d62;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  font-weight: 600;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(rgba(10,61,98,0.9), rgba(10,61,98,0.9)),
+  background: linear-gradient(rgba(10,61,98,0.92), rgba(10,61,98,0.92)),
   url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
   color: white;
   text-align: center;
-  padding: 90px 20px;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 34px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 16px;
+  opacity: 0.9;
 }
 
 /* BUTTONS */
 .btn {
-  display: inline-block;
-  padding: 14px 22px;
-  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
   margin: 8px;
+  transition: 0.2s;
 }
 
-.btn-call {
-  background: #e74c3c;
-  color: white;
+.btn:hover {
+  transform: translateY(-2px);
 }
 
-.btn-quote {
-  background: #25D366;
-  color: white;
+/* COLORS */
+.call { background: #e74c3c; color: white; }
+.quote { background: #25D366; color: white; }
+
+/* TRUST STRIP */
+.trust-strip {
+  background: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
 }
 
 /* SECTIONS */
 section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 h2 {
   text-align: center;
   color: #0a3d62;
+  margin-bottom: 25px;
 }
 
 /* GRID */
@@ -85,68 +94,65 @@ h2 {
   gap: 15px;
 }
 
-/* CARDS */
 .card {
   background: white;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-/* TRUST BUTTON */
-.trust-box {
-  text-align: center;
-  margin-top: 10px;
+/* TRUST BUTTONS */
+.trust-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
 }
 
-.trust-btn {
-  display: inline-block;
-  background: #00b67a;
-  color: white;
+.cta {
   padding: 12px 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  color: white;
 }
+
+.trustpilot { background: #00b67a; }
+.instagram { background: linear-gradient(45deg,#f09433,#cc2366,#bc1888); }
 
 /* FORM */
 form {
   background: white;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 input, textarea {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
 
-/* FLOATING BUTTONS */
-.call-now {
+/* STICKY BAR */
+.sticky {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: #e74c3c;
-  color: white;
-  padding: 14px 18px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0a3d62;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
 }
 
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
+.sticky a {
   color: white;
-  padding: 14px 16px;
-  border-radius: 50%;
-  font-size: 20px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 /* FOOTER */
@@ -161,93 +167,76 @@ footer {
 
 <body>
 
-<div class="top-banner">
-🚨 24/7 EMERGENCY PLUMBING — LONDON & SURREY 🚨
+<div class="topbar">
+🚨 24/7 Emergency Plumbing — London & Surrey
 </div>
-
-<header>
-  <h2>Keen Heat</h2>
-</header>
 
 <div class="hero">
-  <h1>Need a Local Plumber Fast?</h1>
-  <p>Boilers • Heating • Emergency Repairs</p>
+  <h1>Fast Local Plumber You Can Trust</h1>
+  <p class="subtext">Boilers • Heating • Emergency Repairs</p>
 
-  <a class="btn btn-call" href="tel:07933381495">📞 Call Now</a>
-  <a class="btn btn-quote" href="#quote">💬 Get Free Quote</a>
+  <a class="btn call" href="tel:07933381495">📞 Call Now</a>
+  <a class="btn quote" href="#quote">💬 Get Quote</a>
+</div>
+
+<div class="trust-strip">
+⭐ Rated Plumbing Service Across London & Surrey
+
+<div class="trust-buttons">
+
+  <a class="cta trustpilot" href="https://www.trustpilot.com/review/keenheat.co.uk" target="_blank">
+  ⭐ Trustpilot
+  </a>
+
+  <a class="cta instagram" href="https://www.instagram.com/keenheat21/" target="_blank">
+  📸 Instagram
+  </a>
+
+</div>
 </div>
 
 <section>
-  <h2>Trusted Service</h2>
+<h2>Our Services</h2>
 
-  <div class="trust-box">
-    ⭐ Rated Plumbing Service Across London & Surrey<br><br>
-
-    <a class="trust-btn"
-       href="https://www.trustpilot.com/review/keenheat.co.uk"
-       target="_blank">
-       ⭐ Read Our Trustpilot Reviews
-    </a>
-  </div>
-</section>
-<a href="https://www.instagram.com/keenheat21/"
-   target="_blank"
-   style="display:inline-block;background:#E1306C;color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:bold;">
-📸 See Our Work on Instagram
-</a>
-<section>
-  <h2>Our Services</h2>
-
-  <div class="grid">
-    <div class="card">Emergency Plumbing (24/7)</div>
-    <div class="card">Boiler Repairs & Installation</div>
-    <div class="card">Central Heating Systems</div>
-    <div class="card">Leak Repairs</div>
-  </div>
+<div class="grid">
+  <div class="card">Emergency Plumbing</div>
+  <div class="card">Boiler Repairs & Installation</div>
+  <div class="card">Heating Systems</div>
+  <div class="card">Leak Detection</div>
+</div>
 </section>
 
 <section>
-  <h2>Why Choose Us</h2>
+<h2>Why Choose Keen Heat</h2>
 
-  <div class="grid">
-    <div class="card">✔ Fast Response</div>
-    <div class="card">✔ Local Engineer</div>
-    <div class="card">✔ Fair Pricing</div>
-    <div class="card">✔ Guaranteed Work</div>
-  </div>
+<div class="grid">
+  <div class="card">✔ Fast Response</div>
+  <div class="card">✔ Local Engineer</div>
+  <div class="card">✔ Transparent Pricing</div>
+  <div class="card">✔ Guaranteed Work</div>
+</div>
 </section>
 
 <section id="quote">
-  <h2>Get a Free Quote (60 Seconds)</h2>
+<h2>Get a Free Quote</h2>
 
-  <form action="https://formspree.io/f/yourformid" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="tel" name="phone" placeholder="Your Phone" required>
-    <textarea name="message" placeholder="What do you need help with?" required></textarea>
-    <button class="btn btn-call" type="submit">Send Request</button>
-  </form>
-
-  <p style="text-align:center;margin-top:15px;">
-    📞 07933381495<br>
-    📧 info@keenheat.co.uk
-  </p>
-</section>
-
-<section>
-  <h2>Areas We Cover</h2>
-  <div class="card" style="text-align:center;">
-    London • Surrey • Surrounding Areas
-  </div>
+<form action="https://formspree.io/f/yourformid" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Your Phone" required>
+<textarea name="message" placeholder="What do you need help with?" required></textarea>
+<button class="btn call" type="submit">Send Request</button>
+</form>
 </section>
 
 <footer>
-  <p>© 2026 Keen Heat | Plumbing & Heating London & Surrey</p>
+© 2026 Keen Heat | London & Surrey
 </footer>
 
-<!-- Floating buttons -->
-<a class="call-now" href="tel:07933381495">📞 Call Now</a>
-<a class="whatsapp" href="https://wa.me/447933381495">💬</a>
+<div class="sticky">
+<a href="tel:07933381495">📞 Call</a>
+<a href="#quote">💬 Quote</a>
+<a href="https://wa.me/447933381495">💬 WhatsApp</a>
+</div>
 
 </body>
 </html>
-
